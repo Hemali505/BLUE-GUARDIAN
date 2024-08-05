@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Footprint Calculator</title>
+    <link rel="stylesheet" href="2.css">
+</head>
+<body>
+    <header>
+        <h1>GIS Water Footprint Calculator</h1>
+    </header>
+
+    <main>
+        <section class="map-section">
+            <div id="map"></div>
+        </section>
+        
+        <section class="controls-section">
+            <h2>Calculate Water Footprint</h2>
+            <form id="water-footprint-form">
+                <label for="area">Select Area:</label>
+                <select id="area" name="area">
+                    <option value="area1">Area 1</option>
+                    <option value="area2">Area 2</option>
+                </select>
+                
+                <label for="consumption">Water Consumption (Liters):</label>
+                <input type="number" id="consumption" name="consumption" required>
+                
+                <button type="submit">Calculate</button>
+            </form>
+
+            <div id="results">
+                <h3>Results</h3>
+                <p id="water-footprint-result"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 GIS Water Footprint Calculator</p>
+    </footer>
+
+    <script src="3.js"></script>
+</body>
+</html>
